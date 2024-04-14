@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape From Almaty</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="css/img/logo.png">
+
+</head>
+<body id="Main">
+    <div class="navbar" >
+        <a href="index.html"><img src="css/img/logo.png" width="50" height="50"></a>
+        <a href="index.html">Главное</a>
+        <a href="forum.html">Форум</a>
+        <a href="market.html">Барахолка</a>
+    <div class="dropdown">
+    <a href="user_page.html">Личный Кабинет</a>
+    <div class="dropdown-content">
+        <a href="user_page.html?section=quests">Квесты</a>
+        <a href="user_page.html?section=inventory">Инвентарь</a>
+        <a href="user_page.html?section=statistics">Статистика</a>
+        <a href="user_page.html?section=cart">Корзина</a>
+    </div>
+    </div>
+        <button class="login-button" type="button" onclick="showLoginModal()">Авторизация</button>
+    </div>
+<main>
+<div id="product-list">
+    <div class="MainTextMarket">
+        <h2>Барахолка</h2>
+    </div>
+    <div>
+      <label>Сортировка по:</label>
+      <select id="sort-select">
+        <option value="price-asc">Цене (возрастание)</option>
+        <option value="price-desc">Цене (убывание)</option>
+        <option value="name-asc">Имени (А-Я)</option>
+        <option value="name-desc">Имени (Я-А)</option>
+      </select>
+    </div>
+    <div id="balance">
+      <label>Показать только товары в наличии:</label>
+      <input type="checkbox" id="availability-checkbox">
+      <nobr>Баланс: 3000$</nobr>
+    </div>
+    <ul id="product-ul">
+      <!-- Тут будут отображаться товары -->
+    </ul>
+</div>
+</main>
+
+<div id="productModal" class="modalProduct">
+  <div class="modal-contentProduct">
+    <span class="closeProductModal" id="closeModalProduct">&times;</span>
+    <img id="modalImage" src="" alt="Изображение товара" width="200" height="200">
+    <h2 id="modalProductName"></h2>
+    <p id="modalProductPrice"></p>
+    <p id="modalProductAvailability"></p>
+    <p id="modalProductDescription"></p>
+  </div>
+</div>
+
+<div id="confirmationModal" class="modalConf">
+  <div class="modal-contentConf">
+    <span class="closeConf">&times;</span>
+    <p>Вы уверены, что хотите приобрести товар?</p>
+    <button id="confirmButton">Подтвердить</button>
+  </div>
+</div>
+
+<div id="pagination"></div>
+
+     <footer class="footer">
+        <p>All rights reserved by Congress</p>
+    </footer>
+
+    <script src="market.js"></script>
+    
+</body>

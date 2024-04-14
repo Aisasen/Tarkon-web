@@ -1,0 +1,872 @@
+#Main
+{
+    background-image: url('img/sas.png'); /* Замените 'your-background-image.jpg' на путь к вашему изображению-фону */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-grow: 1; /* Занимает оставшееся доступное пространство */
+  /* Другие стили для контента на странице */
+}
+#UserPage 
+{
+    background-image: url('img/sas.png'); /* Замените 'your-background-image.jpg' на путь к вашему изображению-фону */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для панели навигации */
+    padding: 10px;
+    display: flex; /* Используем flex-контейнер для выравнивания элементов по центру */
+    justify-content: center; /* Выравниваем элементы по горизонтали по центру */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    border-radius: 5px;
+}
+
+.navbar img {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px; /* Добавляем небольшой отступ между изображением и текстом */
+}
+
+.navbar a 
+{
+    text-decoration: none;
+    margin-left: 100px; /* Уменьшите отступы между элементами */
+    margin-right: 100px;
+    font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Новый цвет фона при наведении */
+    transition: background-color 0.3s; /* Анимация изменения цвета фона */
+}
+/* Стили для выпадающего меню */
+.dropdown {
+
+  display: inline-block;
+  transform: translateY(0); /* Начальное положение: меню скрыто */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  border-radius: 5px;
+  transform: translateY(-100%); /* Меню начинает выезжать сверху */
+  transition: transform 0.3s ease; /* Добавляем анимацию для свойства transform */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transform: translateY(0); /* При наведении меню выезжает вниз */
+}
+.dropdown a:hover .dropdown-content {
+  display: block;
+  transform: translateY(0); /* При наведении меню выезжает вниз */
+}
+.dropdown a 
+{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+/* Стили для пунктов меню */
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+.center-text 
+{
+    text-align: center;
+    margin-top: 50px; /* Отступ сверху для выравнивания по вертикали */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контейнера */
+    border-radius: 10px; /* Закругленные углы контейнера */
+    color: white;
+    font-size: 20px;
+}
+
+/* Стили для названия проекта */
+h1 
+{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+#user-info-container h2
+{
+    margin-left: 200px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+h2 button
+{
+    margin-left: 10px;
+}
+li
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+/* Стили для описания проекта */
+iframe
+{
+    display: block;
+    margin: 10px auto;
+}
+.news-container 
+{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+.news-item 
+{
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+  .news-item:hover 
+  {
+    transform: translateY(+5px);
+    color: black;
+  }
+
+
+.login-form 
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.login-input 
+{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+.login-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Bender', sans-serif;
+    margin-left: auto; /* Переместите кнопку вправо */
+    margin-right: 20px; /* Добавьте небольшой отступ справа */
+}
+
+.login-button:hover 
+{
+    background-color: #555; /* Новый цвет фона при наведении */
+    transition: background-color 0.3s; /* Анимация изменения цвета фона */
+    color: white; /* Цвет текста при наведении */
+}
+.MinMaxButton
+{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Bender', sans-serif;
+    margin-left: 10px; /* Переместите кнопку вправо */
+    margin-right: 20px; /* Добавьте небольшой отступ справа */
+}
+.MinMaxButton:hover 
+{
+    background-color: #555; /* Новый цвет фона при наведении */
+    transition: background-color 0.3s; /* Анимация изменения цвета фона */
+    color: white; /* Цвет текста при наведении */
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  /* Другие стили для подвала */
+}
+.footer p{
+  font-family: 'Bender', sans-serif;
+  color: #D6EEDE;
+}
+main {
+  flex-grow: 1; /* Занимает оставшееся доступное пространство */
+  /* Другие стили для контента на странице */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Минимальная высота экрана */
+  margin: 0;
+}
+.scrolling-text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px auto;
+    margin-left: 15%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 450px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.scrolling-text {
+    text-align: center;
+    max-height: 100%;
+    overflow-y: hidden; /* Скрыть полосу прокрутки */
+}
+
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.scrolling-text-container::-webkit-scrollbar {
+    width: 12px; /* Ширина ползунка */
+}
+
+.scrolling-text-container::-webkit-scrollbar-thumb {
+    background: #888; /* Цвет ползунка */
+    border-radius: 10px; /* Закруглить углы ползунка */
+}
+
+.scrolling-text-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Изменить цвет ползунка при наведении */
+}
+.scrolling-text p 
+{
+    font-family: 'Bender', sans-serif;
+    font-size: 20px;
+    color: #D6EEDE;
+}
+p
+{
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+
+
+/* Стили для формы авторизации */
+.login-form {
+  text-align: center;
+}
+
+.login-input {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Стили для кнопок внутри формы */
+.login-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: 'Bender', sans-serif;
+  margin: 10px;
+  font-family: 'Bender', sans-serif;
+  color: #D6EEDE;
+}
+
+/* Стили для закрытия модального окна (кнопки "Закрыть") */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.events-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px auto;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 450px;
+    width: 300px; /* Ширина блока с событиями */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.event {
+    margin-bottom: 20px; /* Отступ между событиями */
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Выравнивание по верхней границе */
+    margin-right: 15%; /* Уменьшите это значение, чтобы уменьшить расстояние между блоками */
+}
+.nextgame {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px auto;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 450px;
+    width: 300px; /* Ширина блока с событиями */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav 
+{
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul 
+{
+    margin-left: 80px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 200px;
+}
+
+nav a
+{
+    font-size: 20px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.center-profile
+{
+    text-align: center;
+    margin-top: 5px; /* Отступ сверху для выравнивания по вертикали */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контейнера */
+    border-radius: 10px; /* Закругленные углы контейнера */
+    color: white;
+    font-size: 20px;
+}
+#user-info-container
+{
+    height: 300px;
+}
+
+#user-info-container img
+{
+    border-radius: 100px;
+    border: 3px solid black;
+    box-shadow: 0 0 7px #666;
+    height: 150px;
+    width: 150px;
+}
+
+#dynamicSection
+{
+    text-align: center;
+    margin-top: 5px; /* Отступ сверху для выравнивания по вертикали */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контейнера */
+    border-radius: 10px; /* Закругленные углы контейнера */
+    color: white;
+    font-size: 20px;
+}
+/* Стили для модального окна */
+.modal {
+  display: none; /* Скрываем модальное окно изначально */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Стили для модального окна */
+.modalRename {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-contentRename {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы контейнера */
+    background-color: black; /* Новый цвет фона окна */
+    color: white;
+    font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+/* Стили для контейнера внутри модального окна (где находится форма) */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: black; /* Новый цвет фона окна */
+  font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+
+/* Стили для модального окна */
+.modalPass {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-contentPass {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы контейнера */
+    background-color: black; /* Новый цвет фона окна */
+    font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+/* Стили для модального окна */
+.modalEmail {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-contentEmail {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы контейнера */
+    background-color: black; /* Новый цвет фона окна */
+    font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Стиль для кнопки "Редактировать имя" */
+#editNameButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#editNameButton:hover {
+    background-color: #554;
+}
+.settingsHoverButton
+{
+    margin-left: 50px;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+}
+.settingsHoverButton:hover
+{
+    background-color: fff;
+}
+
+#product-list 
+{
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 1100px;
+      margin: 20px auto;
+      font-size: 25px;
+      font-family: 'Bender', sans-serif;
+      color: #D6EEDE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: column
+}
+#product-list h2
+{
+      width: 1100px;
+      height: 80px;
+      margin: 20px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      font-size: 30px;
+      font-family: 'Bender', sans-serif;
+      color: #D6EEDE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: column
+}
+#product-list ul li
+{
+    width: 700px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контейнера */
+    border-radius: 10px; /* Закругленные углы контейнера */
+    color: white;
+    font-size: 20px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+    padding-left: 20px; /* Добавляем отступ слева */
+    margin-top: 5px;
+}
+
+#product-list ul li img 
+{
+  max-width: 100%; /* Измените максимальную ширину изображения на 100% для адаптивного размера */
+  max-height: 100%; /* Измените максимальную высоту изображения на 100% для адаптивного размера */
+  margin-left: auto;
+}
+
+nobr
+{
+    margin-left: 30px;
+}
+
+#balance
+{
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+#product-list ul li button
+{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Bender', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px; /* Добавьте небольшой отступ справа */
+    font-size: 20px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+#product-list ul li button:hover
+{
+    background-color: #555; /* Новый цвет фона при наведении */
+    transition: background-color 0.3s; /* Анимация изменения цвета фона */
+}
+
+/* Стили для модального окна */
+.modalConf{
+    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Установите больший z-index для показа поверх других элементов */
+  transition: opacity 0.3s; /* Добавим анимацию появления/скрытия */
+}
+
+.modal-contentConf {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black; /* Новый цвет фона окна */
+  padding: 20px;
+  border-radius: 10px; /* Гладкие границы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1001; /* Установите больший z-index, чтобы окно было над фоном */
+  max-width: 300px; /* Ширина модального окна */
+  font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+}
+
+.closeConf {
+   position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555; /* Цвет для кнопки закрытия */
+}
+
+/* Стили для кнопки подтверждения */
+#confirmButton {
+  background-color: #72459b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Гладкие границы */
+  margin-top: 10px;
+  transition: background-color 0.3s; /* Добавляем плавный переход для цвета фона */
+}
+
+#confirmButton:hover {
+  background-color: #00e89a;
+}
+
+.image-container {
+  margin: auto;
+  border: 3px solid #000; /* Ширина и цвет рамки */
+  border-radius: 5px; /* Радиус закругления углов */
+  width: 750px; /* Ширина контейнера равна ширине изображения */
+  height: 500px; /* Высота контейнера равна высоте изображения */
+}
+
+.image-container img {
+  max-width: 100%; /* Чтобы изображение не превышало размеры контейнера */
+  max-height: 100%; /* Чтобы изображение не превышало размеры контейнера */
+  width: 100%;
+  height: 100%;
+}
+
+/* Стили для пагинации */
+#pagination {
+  text-align: center; /* Выравнивание по центру */
+}
+
+#pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pagination a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#pagination a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.modalProduct {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.modal-contentProduct {
+  position: relative;
+  background-color: black;
+  margin: 5% auto; /* Выравниваем модальное окно по вертикали на 10% от верхнего края */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Ширина модального окна */
+}
+
+.closeProductModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Добавьте стили для изображения при наведении */
+.product-image {
+  transition: opacity 0.3s; /* Добавляем плавное изменение непрозрачности в течение 0.3 секунды */
+}
+
+/* При наведении на изображение, уменьшаем непрозрачность */
+.product-image:hover {
+  opacity: 0.5; /* Пример: уменьшаем непрозрачность до 70% */
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+    text-align: center;
+}
+
+#closeModalProduct
+{
+    color: white;
+}
+
+#modalImage
+{
+    display: block;
+  margin: 0 auto; /* Выравниваем изображение горизонтально по центру */
+  max-width: 100%; /* Чтобы изображение не превышало ширину модального окна */
+}
+
+#modalProductPrice
+{
+    font-size: 20px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+    text-align: center;
+}
+
+#modalProductAvailability
+{
+    font-size: 18px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+    text-align: center;
+    font-style: italic;
+}
+#modalProductDescription
+{
+    font-size: 18px;
+    font-family: 'Bender', sans-serif;
+    color: #D6EEDE;
+    text-align: center;
+}

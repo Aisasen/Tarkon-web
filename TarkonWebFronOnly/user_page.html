@@ -1,0 +1,99 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape From Almaty</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="css/img/logo.png">
+</head>
+<body id="Main">
+    <main>
+    <div class="navbar" >
+        <a href="index.html"><img src="css/img/logo.png" width="50" height="50"></a>
+        <a href="index.html">Главное</a>
+        <a href="forum.html">Форум</a>
+        <a href="market.html">Барахолка</a>
+    <div class="dropdown">
+    <a href="user_page.html">Личный Кабинет</a>
+    <div class="dropdown-content">
+        <a href="user_page.html?section=quests">Квесты</a>
+        <a href="user_page.html?section=inventory">Инвентарь</a>
+        <a href="user_page.html?section=statistics">Статистика</a>
+        <a href="user_page.html?section=cart">Корзина</a>
+    </div>
+    </div>
+        <button class="login-button" type="button" onclick="showLoginModal()">Авторизация</button>
+    </div>
+
+ <nav>
+     <ul>
+         <li><a href="#" onclick="showSection('statistics')">Статистика</a></li>
+         <li><a href="#" onclick="showSection('inventory')">Инвентарь</a></li>
+         <li><a href="#" onclick="showSection('quests')">Квесты</a></li>
+         <li><a href="#" onclick="showSection('cart')">Корзина</a></li>
+     </ul>
+    </nav>
+
+    <div class="center-profile">
+     <div id="user-info-container">
+        <img src="css/img/pivka.jpg" alt="Аватар">
+        <h2>BAHNUV PIVKA  <div class="dropdown">
+                <a href="#" class="settingsHoverButton">Редакция</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="openEditNameModal()">Редактировать имя</a>
+
+                    <a href="#" onclick="openEditPassModal()">Сменить пароль</a>
+
+                    <a href="#" onclick="openEditEmailModal()">Сменить почту</a>
+
+                    <a href="#" onclick="openEditStatusModal()">Установить статус (Upcoming)</a>
+                </div>
+        </div></h2>
+        <p>Online</p>
+        </div>
+    </div>
+
+
+<!-- Модальное окно для редактирования имени пользователя -->
+<div id="editNameModal" class="modalRename">
+    <div class="modal-contentRename">
+        <span class="close" onclick="closeEditNameModal()">&times;</span>
+        <h3>Редактировать имя пользователя</h3>
+        <label for="newName">Новое имя:</label>
+        <input type="text" id="newName" name="newName" required>
+        <button onclick="editName()">Сохранить</button>
+    </div>
+</div>
+
+<!-- Модальное окно для смены пароля -->
+<div id="editPassModal" class="modalPass">
+    <div class="modal-contentPass">
+        <span class="close" onclick="closeEditPassModal()">&times;</span>
+        <h3>Сменить пароль</h3>
+        <label for="newPass">Новый пароль:</label>
+        <input type="text" id="newPass" name="newPass" required>
+        <button onclick="editPass()">Сохранить</button>
+    </div>
+</div>
+
+<!-- Модальное окно для смены почты -->
+<div id="editEmailModal" class="modalEmail">
+    <div class="modal-contentEmail">
+        <span class="close" onclick="closeEditEmailModal()">&times;</span>
+        <h3>Сменить почту</h3>
+        <label for="newEmail">Новая почта:</label>
+        <input type="text" id="newEmail" name="newEmail" required>
+        <button onclick="editEmail()">Сохранить</button>
+    </div>
+</div>
+
+    <section id="dynamicSection">
+        <!-- Здесь будет динамически меняющееся содержание -->
+    </section>
+</main>
+    <footer class="footer">
+        <p>All rights reserved by Congress</p>
+    </footer>
+
+<script src="user_page.js"></script>
+
+</body>

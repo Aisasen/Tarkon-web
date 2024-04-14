@@ -1,0 +1,59 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape From Almaty</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="css/img/logo.png">
+</head>
+<body id="Main">
+    <main>
+    <div class="navbar" >
+        <a href="index.html"><img src="css/img/logo.png" width="50" height="50"></a>
+        <a href="index.html">Главное</a>
+        <a href="forum.html">Форум</a>
+        <a href="market.html">Барахолка</a>
+    <div class="dropdown">
+    <a href="user_page.html">Личный Кабинет</a>
+    <div class="dropdown-content">
+        <a href="user_page.html?section=quests">Квесты</a>
+        <a href="user_page.html?section=inventory">Инвентарь</a>
+        <a href="user_page.html?section=statistics">Статистика</a>
+        <a href="user_page.html?section=cart">Корзина</a>
+    </div>
+    </div>
+        <button class="login-button" type="button" onclick="showLoginModal()">Авторизация</button>
+    </div>
+    <div class="center-text">
+        <h1>Escape From Almaty</h1>
+        <p>В роли солдата одной из бригад, игрокам предстоит столкнуться с невероятными испытаниями и принять решения, которые будут иметь далеко идущие последствия для обстановки в городе.
+        </p>
+        <p>Адаптируйся. Импровизируй. Преодолевай.</p>
+    </div>
+
+<div class="content-container">
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+        <p>После тяжелых, для Республики, январских дней, в ходе которых события, начиная с народного недовольства и заканчивая кровавой бойней, переросли в масштабную войну, в ходе которой некогда мирный и солнечный город Алматы превратился в зону запустения, ограниченную многочисленными военными блокпостами. Неподготовленная страна была потрясена масштабами произошедшего, а союзники, поздно прибывшие на помощь, не смогли переломить ход войны в свою пользу. Это ведомо лишь тем, кто проник в глубины города, где царит нечеловечность, анархия и хаос.
+
+        Именно в этот момент в зону отчуждения прибывают солдаты ЧВК (Частных Военных Компаний). Их миссия – восстановить порядок и стабильность в этом разоренном городе. Они должны действовать в условиях, где правительство потеряло контроль, а зона отчуждения наполнилась различными группировками и бандами, которые сражаются за власть и ресурсы.
+
+        Солдаты ЧВК, опытные и хорошо обученные, становятся последней надеждой на восстановление Алматы как крупного города. Их задачи включают в себя не только борьбу с вооруженными группировками, но и оказание гуманитарной помощи мирным жителям, а также сбор информации о событиях внутри города и за его пределами.</p>
+        </div>
+    </div>
+    <div class="nextgame">
+  <h2 style="text-align: center;">Следующая игра:</h2>
+  <p>Дата: <span id="nextGameDate"></span></p>
+  <p>Локация: <span id="nextGameLocation"></span></p>
+</div>
+    <div class="events-container">
+    <!-- Сюда будут добавлены события из базы данных -->
+    </div>
+</div>
+</main>
+    <footer class="footer">
+        <p>All rights reserved by Congress</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
